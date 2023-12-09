@@ -1,0 +1,47 @@
+id salary  rank()  dansc_rank()
+1  1000    4           3
+2  1000    4           3
+3  2000    3           2
+4  3000    1           1
+5  3000    1           1
+
+
+tab
+id name age
+
+with cte (
+select id,name,age,row_number() over(patrition by id order by id)as removing_dup from tab)
+
+delete from cte where removing_dup >1
+
+employe
+name salary
+
+select salary from employe 
+order by salry desc 
+offset n-1 row
+fetch next 1 row only
+
+by using sql 
+
+ashok 
+
+
+select * from table a left join table b on a.id =b.id
+where b.name is not null;
+
+
+x = [1,2,3,4,4,5,6]
+y = list(dict.fromkeys(x))
+print(x)
+
+ for x in range(100,111):
+ print(x)
+ 
+ x =  "ashok ,reddy"
+ y = x[ ::-1]
+ print(y)
+ 
+ 
+
+[ 1 2 3 4 5] >> 6
